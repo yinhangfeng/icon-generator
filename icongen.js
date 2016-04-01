@@ -17,6 +17,9 @@ if (!Object.keys(iconSizes)) {
 }
 
 var platforms = argv._;
+if(!platforms.length) {
+  platforms = ['android', 'other'];
+}
 
 var source_image = argv.s;
 var output_destination = argv.o || "";
@@ -30,12 +33,8 @@ var index = 0;
 
 // Which platforms will we output?
 platforms.forEach(function(platform){
-    if (platform.toLowerCase() === "ios")     {
-        iconSizes.ios.forEach(function(value){ platform_que.push(value); });
-    };
-    if (platform.toLowerCase() === "android")     {
-        iconSizes.android.forEach(function(value){ platform_que.push(value); });
-    };
+  var platformConfig = iconSizes[platform.toLowerCase()];
+  platformConfig && platformConfig.forEach(function(value){ platform_que.push(value); });
 });
 
 function processQueObject(queObject){
@@ -62,25 +61,25 @@ function processQueObject(queObject){
                 var width = queObject.width;
                 var height = queObject.hasOwnProperty("height") ? queObject.height : width;
 
-                image.resize(width, height, function(err, rzdImg) {
-                    rzdImg.writeFile(fullpath, function(err) {
-                        if (err) {
-                            console.log(chalk.red("    [x] ") + chalk.red(fullpath));
-                            console.log(err.message);
-                        };
-                        console.log(chalk.green("    [x] ") + chalk.white(fullpath));
-                        index++;
-                        if (index < platform_que.length){
-                            processQueObject(platform_que[index]);
-                        } else {
-                            console.log();
-                            console.log( chalk.gray("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
-                            console.log( chalk.magenta("COMPLETE: ") + chalk.white("processed "+index+" icons"));
-                            console.log( chalk.gray("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
-                            process.exit(0);
-                        }
-                    });
-                });
+                image.batch()
+                  .resize(width, height)
+                  .writeFile(fullpath, function(err) {
+                      if (err) {
+                          console.log(chalk.red("    [x] ") + chalk.red(fullpath));
+                          console.log(err.message);
+                      };
+                      console.log(chalk.green("    [x] ") + chalk.white(fullpath));
+                      index++;
+                      if (index < platform_que.length){
+                          processQueObject(platform_que[index]);
+                      } else {
+                          console.log();
+                          console.log( chalk.gray("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
+                          console.log( chalk.magenta("COMPLETE: ") + chalk.white("processed "+index+" icons"));
+                          console.log( chalk.gray("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
+                          process.exit(0);
+                      }
+                  });
 
             }
 
@@ -99,7 +98,7 @@ function reportError(msg){
 }
 
 function outputSessionInformation(platforms, source_image, output_destination){
-    var _output = output_destination === "" ? "/ (current directory)" : output_destination;
+    var _output = output_destination === "" ? "./ (current directory)" : output_destination;
     console.log();
     console.log(chalk.gray("Icon Generator version ", iconGenPackage.version, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"));
     //console.log(chalk.gray());

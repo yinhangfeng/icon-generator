@@ -1,51 +1,23 @@
 {
-    "ios" : [
-        {"folder":"ios", "filename": "29-iPhone-spot-5-6-sett-5-8",     "width": 29},
-        {"folder":"ios", "filename": "29-iPhone-spot-5-6-sett-5-8@2x",  "width": 58},
-        {"folder":"ios", "filename": "29-iPhone-spot-5-6-sett-5-8@3x",  "width": 87},
-        {"folder":"ios", "filename": "40-iPhone-spot-7-8",              "width": 40},
-        {"folder":"ios", "filename": "40-iPhone-spot-7-8@2x",           "width": 80},
-        {"folder":"ios", "filename": "40-iPhone-spot-7-8@3x",           "width": 120},
-        {"folder":"ios", "filename": "57-iPhone-app-5-6",               "width": 57},
-        {"folder":"ios", "filename": "57-iPhone-app-5-6@2x",            "width": 114},
-        {"folder":"ios", "filename": "60-iPhone-app-7-8",               "width": 60},
-        {"folder":"ios", "filename": "60-iPhone-app-7-8@2x",            "width": 120},
-        {"folder":"ios", "filename": "60-iPhone-app-7-8@3x",            "width": 180},
-        {"folder":"ios", "filename": "29-iPad-sett-5-8",                "width": 29},
-        {"folder":"ios", "filename": "29-iPad-sett-5-8@2x",             "width": 58},
-        {"folder":"ios", "filename": "40-iPad-spot-7-8",                "width": 40},
-        {"folder":"ios", "filename": "40-iPad-spot-7-8@2x",             "width": 80},
-        {"folder":"ios", "filename": "50-iPad-spot-5-6",                "width": 50},
-        {"folder":"ios", "filename": "50-iPad-spot-5-6@2x",             "width": 100},
-        {"folder":"ios", "filename": "72-iPad-app-5-6",                 "width": 72},
-        {"folder":"ios", "filename": "72-iPad-app-5-6@2x",              "width": 144},
-        {"folder":"ios", "filename": "76-iPad-app-7-8",                 "width": 76},
-        {"folder":"ios", "filename": "76-iPad-app-7-8@2x",              "width": 152},
-        {"folder":"ios", "filename": "120-CarPlay-8",                   "width": 120}
+    "ios": [
     ],
 
     "android" : [
-        {"folder":"android/one", "filename": "29-iPhone-spot-5-6-sett-5-8",         "width": 29},
-        {"folder":"android/one", "filename": "29-iPhone-spot-5-6-sett-5-8@2x",      "width": 58},
-        {"folder":"android/one", "filename": "29-iPhone-spot-5-6-sett-5-8@3x",      "width": 87},
-        {"folder":"android/one", "filename": "40-iPhone-spot-7-8",                  "width": 40},
-        {"folder":"android/two", "filename": "40-iPhone-spot-7-8@2x",               "width": 80},
-        {"folder":"android/two", "filename": "40-iPhone-spot-7-8@3x",               "width": 120},
-        {"folder":"android/two", "filename": "57-iPhone-app-5-6",                   "width": 57},
-        {"folder":"android/two", "filename": "57-iPhone-app-5-6@2x",                "width": 114},
-        {"folder":"android/three", "filename": "60-iPhone-app-7-8",                 "width": 60},
-        {"folder":"android/three", "filename": "60-iPhone-app-7-8@2x",              "width": 120},
-        {"folder":"android/three", "filename": "60-iPhone-app-7-8@3x",              "width": 180},
-        {"folder":"android/four", "filename": "29-iPad-sett-5-8",                   "width": 29},
-        {"folder":"android/four", "filename": "29-iPad-sett-5-8@2x",                "width": 58},
-        {"folder":"android/four", "filename": "40-iPad-spot-7-8",                   "width": 40},
-        {"folder":"android/four", "filename": "40-iPad-spot-7-8@2x",                "width": 80},
-        {"folder":"android/four", "filename": "50-iPad-spot-5-6",                   "width": 50},
-        {"folder":"android/four", "filename": "50-iPad-spot-5-6@2x",                "width": 100},
-        {"folder":"android/four", "filename": "72-iPad-app-5-6",                    "width": 72},
-        {"folder":"android/four", "filename": "72-iPad-app-5-6@2x",                 "width": 144},
-        {"folder":"android/four", "filename": "76-iPad-app-7-8",                    "width": 76},
-        {"folder":"android/four", "filename": "76-iPad-app-7-8@2x",                 "width": 152},
-        {"folder":"android/four", "filename": "120-CarPlay-8",                      "width": 120}
+        {"folder":"android/mipmap-mdpi", "filename": "ic_launcher.png", "width": 48},
+        {"folder":"android/mipmap-hdpi", "filename": "ic_launcher.png", "width": 72},
+        {"folder":"android/mipmap-xhdpi", "filename": "ic_launcher.png", "width": 96},
+        {"folder":"android/mipmap-xxhdpi", "filename": "ic_launcher.png", "width": 144},
+        {"folder":"android/mipmap-xxxhdpi", "filename": "ic_launcher.png", "width": 192},
+
+        {"folder":"android/mipmap-hdpi", "filename": "ic_notification.png", "width": 36},
+        {"folder":"android/mipmap-xhdpi", "filename": "ic_notification.png", "width": 48}
+    ],
+
+    "other": [
+      {"folder":"other", "filename": "icon_16.png", "width": 16},
+      {"folder":"other", "filename": "icon_28.png", "width": 28},
+      {"folder":"other", "filename": "icon_80.png", "width": 80},
+      {"folder":"other", "filename": "icon_108.png", "width": 108},
+      {"folder":"other", "filename": "icon_512.png", "width": 512}
     ]
 }
