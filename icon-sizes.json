@@ -3,21 +3,21 @@
     ],
 
     "android" : [
-        {"folder":"android/mipmap-mdpi", "filename": "ic_launcher.png", "width": 48},
-        {"folder":"android/mipmap-hdpi", "filename": "ic_launcher.png", "width": 72},
-        {"folder":"android/mipmap-xhdpi", "filename": "ic_launcher.png", "width": 96},
-        {"folder":"android/mipmap-xxhdpi", "filename": "ic_launcher.png", "width": 144},
-        {"folder":"android/mipmap-xxxhdpi", "filename": "ic_launcher.png", "width": 192},
+        {"folder":"android/mipmap-mdpi", "filename": "ic_launcher", "width": 48},
+        {"folder":"android/mipmap-hdpi", "filename": "ic_launcher", "width": 72},
+        {"folder":"android/mipmap-xhdpi", "filename": "ic_launcher", "width": 96},
+        {"folder":"android/mipmap-xxhdpi", "filename": "ic_launcher", "width": 144},
+        {"folder":"android/mipmap-xxxhdpi", "filename": "ic_launcher", "width": 192},
 
-        {"folder":"android/mipmap-hdpi", "filename": "ic_notification.png", "width": 36},
-        {"folder":"android/mipmap-xhdpi", "filename": "ic_notification.png", "width": 48}
+        {"folder":"android/mipmap-hdpi", "filename": "ic_notification", "width": 36},
+        {"folder":"android/mipmap-xhdpi", "filename": "ic_notification", "width": 48}
     ],
 
     "other": [
-      {"folder":"other", "filename": "icon_16.png", "width": 16},
-      {"folder":"other", "filename": "icon_28.png", "width": 28},
-      {"folder":"other", "filename": "icon_80.png", "width": 80},
-      {"folder":"other", "filename": "icon_108.png", "width": 108},
-      {"folder":"other", "filename": "icon_512.png", "width": 512}
+      {"folder":"other", "filename": "icon_16", "width": 16},
+      {"folder":"other", "filename": "icon_28", "width": 28},
+      {"folder":"other", "filename": "icon_80", "width": 80},
+      {"folder":"other", "filename": "icon_108", "width": 108},
+      {"folder":"other", "filename": "icon_512", "width": 512}
     ]
 }
